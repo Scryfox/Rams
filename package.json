@@ -1,0 +1,27 @@
+{
+  "name": "rams",
+  "version": "0.0.1",
+  "description": "Really Awesome Magic System",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^8.0.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.1.0"
+  },
+  "scripts": {
+    "build": "tsc && node util/copy_html_css.js",
+    "start": "npm run build && electron build/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scryfox/Rams.git"
+  },
+  "author": "Scryfox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scryfox/Rams/issues"
+  },
+  "homepage": "https://github.com/Scryfox/Rams#readme"
+}
